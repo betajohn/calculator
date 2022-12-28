@@ -1,50 +1,26 @@
-function add(){
-  let total=0;
-  for(let i=0;i<arguments.length;i++){
-    total +=arguments[i];
-  }
-  return total;;
+function add(a,b){
+  return a+b;
 }
-
-function subtract(){
-  let total=arguments[0];
-  for(let i=1;i<arguments.length;i++){
-    total -=arguments[i];
-  }
-  return total;;
+function substract(a,b){
+  return a-b;
 }
-
-function multiply(){
-  let total=arguments[0];
-  for(let i=1;i<arguments.length;i++){
-    total *=arguments[i];
-  }
-  return total;;
+function multiply(a,b){
+  return a*b;
 }
-
-function divide(){
-  let total=arguments[0];
-  for(let i=1;i<arguments.length;i++){
-    total /=arguments[i];
-  }
-  return total;;
+function divide(a,b){
+  return a/b;
 }
-
-function operate(){
-  const operator=arguments[0];
-  args=Array.from(arguments);
-  args.splice(0,1);
-
+function operate(operator, a, b){
   if(operator==="+"){
-    add(...args);
+    add(a,b);
   }
   if(operator==="-"){
-    subtract(...args);
+    substract(a,b);
   }
   if(operator==="*"){
-    multiply(...args);
+    multiply(a,b);
   }
   if(operator==="/"){
-    divide(...args);
+    divide(a,b);
   }
 }
