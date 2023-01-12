@@ -12,12 +12,25 @@
   <body>
     <div class="topContainer">
       <div class="bottomContainer">
+        <div class="calculatorLogo">
+          <div class="title">Calculator</div>  
+          <img src="./images/arrow.png" id="arrow" alt="Menu"> 
+         </div>
         <div class="displayContainer">
+          <table class="shortcutsTable hide" id="dropdown">
+            
+            <tr> <th>Button</th> <th>Shortcut</th> </tr>
+            <tr> <td>Del</td> <td>Backspace</td> </tr>
+            <tr> <td>=</td> <td>Enter</td>
+            </tr> <tr> <td>**</td> <td>p</td> </tr>
+            <tr> <td>C</td> <td>c</td> </tr>
+            <tr> <td>±</td><td>, (comma)</td></tr>
+          </table>
           <div class="display" id="historyScreen"></div>
           <div class="display" id="currentScreen">0</div>
         </div>
         <div class="buttonsContainer">
-          <button class="operator">CE</button>
+          <button class="operator">**</button>
           <button class="operator">DEL</button>
           <button class="operator">C</button>
           <button class="operator">÷</button>
